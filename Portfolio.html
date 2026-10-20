@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Douaa Jatlaoui – Business Intelligence & Data Analyst</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <a class="name" href="#top">Douaa Jatlaoui</a>
+    <ul>
+      <li><a href="#work">Projects</a></li>
+      <li><a href="#demo">Live demo</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <div class="bar" id="bar"></div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top" data-screen-label="01 Hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow mono"><i></i>Junior BI &amp; Data Analyst · Monastir, Tunisia</div>
+      <h1>
+        <span class="line"><span>I turn financial</span></span>
+        <span class="line"><span>data into <span class="hl">decisions<svg viewBox="0 0 300 20" preserveAspectRatio="none"><path d="M3 14 C 80 4, 200 4, 297 12"/></svg></span></span></span>
+        <span class="line"><span>people act on.</span></span>
+      </h1>
+      <p class="intro">I've built dashboards, reporting pipelines and <b>a full reporting web application for a finance team</b>. Now studying Business Analytics &amp; Data Science at the Université Virtuelle de Tunis.</p>
+      <div class="btns">
+        <a class="btn p" href="#work">See my projects <span class="arr">→</span></a>
+        <a class="btn" href="#demo">Play with the demo</a>
+      </div>
+    </div>
+
+    <aside class="ledger" aria-label="Illustrative KPI ledger">
+      <header><h2>A month in the ledger</h2><span class="mono" style="color:var(--muted)">FY · M06</span></header>
+      <div class="row"><span>Revenue</span><span class="v" data-v="2840" data-p="€" data-s="k">0</span></div>
+      <div class="row"><span>Gross margin</span><span class="v" data-v="31.4" data-s="%">0</span></div>
+      <div class="row"><span>Cash ratio</span><span class="v" data-v="0.42">0</span></div>
+      <div class="row"><span>Days sales outstanding</span><span class="v" data-v="46" data-s=" d">0</span></div>
+      <div class="spark">
+        <svg viewBox="0 0 300 60" preserveAspectRatio="none">
+          <defs><linearGradient id="sg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#2E6A4E" stop-opacity=".25"/><stop offset="1" stop-color="#2E6A4E" stop-opacity="0"/></linearGradient></defs>
+          <path class="area" d="M0 44 L30 40 L60 46 L90 34 L120 36 L150 26 L180 30 L210 20 L240 24 L270 12 L300 8 L300 60 L0 60Z"/>
+          <path d="M0 44 L30 40 L60 46 L90 34 L120 36 L150 26 L180 30 L210 20 L240 24 L270 12 L300 8"/>
+        </svg>
+      </div>
+      <p class="note">Invented figures, for illustration only.</p>
+    </aside>
+  </div>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="track">
+      <span>Power BI &amp; DAX</span><span>KPI design</span><span>ETL pipelines</span><span>SQL · PostgreSQL</span><span>Budget vs. actual</span><span>FastAPI · React</span><span>Data quality</span><span>GIMSI method</span>
+      <span>Power BI &amp; DAX</span><span>KPI design</span><span>ETL pipelines</span><span>SQL · PostgreSQL</span><span>Budget vs. actual</span><span>FastAPI · React</span><span>Data quality</span><span>GIMSI method</span>
+    </div>
+  </div>
+</header>
+
+<!-- ============ WORK ============ -->
+<section id="work" data-screen-label="02 Projects">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="num">01 — Projects</span>
+      <div>
+        <h2>Three projects, <em>one way</em> of working.</h2>
+        <p>Building a reporting product, designing dashboards for a treasury team, and preparing data so it can be trusted.</p>
+      </div>
+    </div>
+
+    <article class="case reveal">
+      <div class="case-top">
+        <div>
+          <span class="mono" style="color:var(--muted)">Flagship · Final-year project</span>
+          <h3 style="margin-top:12px">Financial reporting platform for a finance team</h3>
+          <div class="meta">
+            <div><b>4</b><span>interactive dashboards</span></div>
+            <div><b>3 × 4 wk</b><span>Scrum sprints</span></div>
+            <div><b>2</b><span>developers</span></div>
+          </div>
+          <ul class="tags" style="margin-top:22px"><li>React</li><li>FastAPI</li><li>PostgreSQL</li><li>SQLAlchemy</li><li>Scrum</li><li>GIMSI</li><li>LLM API</li></ul>
+        </div>
+        <div class="grade" id="grade">
+          <svg viewBox="0 0 132 132"><circle class="bg" cx="66" cy="66" r="56"/><circle class="fg" cx="66" cy="66" r="56"/></svg>
+          <div><b>17</b><span>/ 20 graded</span></div>
+        </div>
+      </div>
+
+      <div class="tabs" role="tablist">
+        <button class="on" data-t="0" role="tab"><span class="mono">01</span>The problem</button>
+        <button data-t="1" role="tab"><span class="mono">02</span>What we built</button>
+        <button data-t="2" role="tab"><span class="mono">03</span>Indicator design</button>
+        <button data-t="3" role="tab"><span class="mono">04</span>AI commentary</button>
+        <button data-t="4" role="tab"><span class="mono">05</span>Outcome</button>
+      </div>
+
+      <!-- 01 problem -->
+      <div class="panel on" data-p="0">
+        <div class="txt">
+          <p class="big">Monthly reports were assembled by hand — and stale by the time managers saw them.</p>
+          <p class="muted">Exports from SAP and HFM, cleaned in Excel, charts built manually, then emailed. Every correction restarted the process.</p>
+          <p class="muted">Context: shared-services finance team of a European travel group. Co-developed with one teammate.</p>
+        </div>
+        <div class="flow">
+          <div class="switch"><button class="on" data-f="before">Before</button><button data-f="after">After</button></div>
+          <div class="steps before" id="steps"></div>
+          <p class="verdict" id="verdict"></p>
+        </div>
+      </div>
+
+      <!-- 02 built -->
+      <div class="panel" data-p="1">
+        <div class="txt">
+          <p class="big">A web app where the team enters data and reads live dashboards.</p>
+          <p class="muted">Data is managed in four categories. Role-based access lets a manager decide who sees which dashboard.</p>
+          <div class="cats"><span>Revenue &amp; expenses</span><span>Assets &amp; liabilities</span><span>Cash flow</span><span>Clients</span></div>
+        </div>
+        <div class="dashes" id="dashes"></div>
+      </div>
+
+      <!-- 03 GIMSI -->
+      <div class="panel" data-p="2">
+        <div class="txt">
+          <p class="big">From objectives to KPIs, with the GIMSI method.</p>
+          <p class="muted">Each indicator has a documented purpose, formula and source table. Company-specific definitions are stated openly.</p>
+          <p class="muted">Pick an objective, then a KPI, to see how it was defined.</p>
+        </div>
+        <div class="gimsi">
+          <div><div class="mono colhead">Objective</div><div class="objs" id="objs"></div></div>
+          <div><div class="mono colhead">Indicator</div><div class="kpis-list" id="kpiList"></div></div>
+          <div class="formula" id="formula"></div>
+        </div>
+      </div>
+
+      <!-- 04 AI -->
+      <div class="panel" data-p="3">
+        <div class="txt">
+          <p class="big">The language model comments on figures. It does not forecast.</p>
+          <p class="muted">The backend sends current KPIs to the Cohere model, which returns written interpretations with risk flags and three forward-looking recommendations. Results are stored so users can revisit them.</p>
+        </div>
+        <div class="ai">
+          <div class="bar"><span class="mono">Commentary · M06 · sample</span><button id="regen">Generate ↻</button></div>
+          <div class="out" id="aiOut"></div>
+          <div class="foot">Simulated output with invented figures, written to mirror the app's format.</div>
+        </div>
+      </div>
+
+      <!-- 05 outcome -->
+      <div class="panel" data-p="4">
+        <div class="txt">
+          <p class="big">End-to-end ownership, delivered in three sprints.</p>
+          <p class="muted">From requirements to testing, across the full stack.</p>
+          <div class="next"><span class="mono">What I'd do next</span>Add automated SAP and HFM connectors, and alerts for flagged risks.</div>
+        </div>
+        <div>
+          <div class="sprints">
+            <div class="sprint"><span class="mono">Sprint 1</span><b>Model</b><small>Requirements, data model, API</small></div>
+            <div class="sprint"><span class="mono">Sprint 2</span><b>Measure</b><small>KPI logic, dashboards</small></div>
+            <div class="sprint"><span class="mono">Sprint 3</span><b>Explain</b><small>AI commentary, access, tests</small></div>
+          </div>
+          <div class="own"><span>Requirements</span><span>Data model</span><span>REST API</span><span>KPI logic</span><span>Dashboards</span><span>Role-based access</span><span>Testing</span><span>Scrum delivery</span></div>
+        </div>
+      </div>
+    </article>
+
+    <div class="pair">
+      <article class="card reveal">
+        <div class="k mono"><span>Summer internship</span><span>02</span></div>
+        <h3>Treasury dashboards in Power&nbsp;BI</h3>
+        <p>Consolidated finance data from SAP, HFM and Excel through an ETL process that refreshed dashboards each fiscal month, then built Power BI dashboards with custom DAX measures for budget-versus-actual analysis, used by the treasury team.</p>
+        <div class="viz">
+          <div class="viz-top"><span class="mono" style="color:var(--muted)">Recreated · invented data</span>
+            <div class="seg" id="bvaSeg"><button class="on" data-m="abs">Actual vs budget</button><button data-m="var">Variance</button></div></div>
+          <div class="bva" id="bva"></div>
+          <div class="legend" id="bvaLegend"></div>
+        </div>
+        <ul class="tags"><li>Power BI</li><li>DAX</li><li>ETL</li><li>Excel</li></ul>
+      </article>
+
+      <article class="card reveal">
+        <div class="k mono"><span>Academic · team of 3</span><span>03</span></div>
+        <h3>Cleaning and normalizing an employee dataset</h3>
+        <p>Handled missing values with LOCF, mean, median and fixed-value imputation; removed duplicates; corrected invalid dates and levels; treated pay-rate outliers with the IQR rule. Then compared four scaling methods.</p>
+        <div class="viz">
+          <div class="viz-top"><span class="mono" style="color:var(--muted)">Pay rate · scaled</span>
+            <div class="seg" id="scaleSeg"><button class="on" data-s="raw">Raw</button><button data-s="minmax">MinMax</button><button data-s="std">Standard</button><button data-s="robust">Robust</button><button data-s="maxabs">MaxAbs</button></div></div>
+          <div class="scale" id="scale"></div>
+          <p class="scale-note" id="scaleNote"></p>
+        </div>
+        <ul class="tags"><li>Python</li><li>Pandas</li><li>Data quality</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DEMO ============ -->
+<section id="demo" data-screen-label="03 Demo">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="num">02 — Live demo</span>
+      <div>
+        <h2>A liquidity dashboard you can <em>stress-test</em>.</h2>
+        <p>A public-safe recreation in the spirit of my liquidity dashboard. Move the drivers and watch the KPIs and commentary respond. Not the original system — every number is fictional.</p>
+      </div>
+    </div>
+
+    <div class="board reveal">
+      <div class="panel-d">
+        <div class="kpi-row">
+          <div><span>Free cash flow</span><b id="kFcf">—</b><small id="dFcf"></small></div>
+          <div><span>Cash ratio</span><b id="kCr">—</b><small id="dCr"></small></div>
+          <div><span>DSO</span><b id="kDso">—</b><small id="dDso"></small></div>
+          <div><span>DPO</span><b id="kDpo">—</b><small id="dDpo"></small></div>
+        </div>
+        <div class="chart-d" id="chartD"><svg id="cd" viewBox="0 0 700 300"></svg><div class="tip" id="tip"></div></div>
+        <div class="commentary">
+          <span class="mono">Readout</span>
+          <ul id="readout"></ul>
+        </div>
+      </div>
+      <div class="panel-d ctrl">
+        <div><span class="mono" style="color:#9A9EA6">Drivers</span><h3 style="margin-top:6px">What if…</h3></div>
+        <div class="sl"><label>Revenue growth <b id="vG">+0%</b></label><input type="range" id="sG" min="-20" max="20" value="0"><small><span>−20%</span><span>+20%</span></small></div>
+        <div class="sl"><label>Clients pay in <b id="vD">46 d</b></label><input type="range" id="sD" min="25" max="80" value="46"><small><span>25 d</span><span>80 d</span></small></div>
+        <div class="sl"><label>We pay suppliers in <b id="vP">52 d</b></label><input type="range" id="sP" min="25" max="80" value="52"><small><span>25 d</span><span>80 d</span></small></div>
+        <div class="sl"><label>Operating cost change <b id="vC">+0%</b></label><input type="range" id="sC" min="-15" max="15" value="0"><small><span>−15%</span><span>+15%</span></small></div>
+        <button class="reset" id="reset">Reset to baseline</button>
+        <p>Simplified model: collections and payments shift with DSO and DPO; cash out scales with costs. Built to show KPI thinking, not to forecast.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" data-screen-label="04 About">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="num">03 — About</span>
+      <div><h2>Where numbers meet <em>a real decision</em>.</h2></div>
+    </div>
+    <div class="about-grid">
+      <div class="reveal">
+        <p class="statement">Business Intelligence graduate <em>with honors</em> from ISG Sousse, with 6 months of finance reporting experience across two internships.</p>
+        <ul class="timeline">
+          <li class="now"><span class="mono">2026 — now</span><b>Professional Master's, Business Analytics &amp; Data Science</b><small>Université Virtuelle de Tunis</small></li>
+          <li><span class="mono">Final-year project</span><b>Financial reporting platform</b><small>Shared-services finance team · graded 17/20</small></li>
+          <li><span class="mono">Summer internship</span><b>Treasury dashboards in Power BI</b><small>ETL from SAP, HFM, Excel · DAX measures</small></li>
+          <li><span class="mono">2023 — 2026</span><b>Licence in Business Computing, BI</b><small>ISG Sousse · with honors</small></li>
+        </ul>
+      </div>
+      <div class="skills reveal">
+        <div class="skill-group"><h3>Data &amp; BI <span class="mono">analyse</span></h3><div class="chips"><span>Power BI</span><span>DAX</span><span>Advanced Excel</span><span>ETL</span><span>KPI design</span><span>Data warehousing</span><span>Multidimensional modeling</span></div></div>
+        <div class="skill-group"><h3>Build <span class="mono">ship</span></h3><div class="chips"><span>SQL</span><span>PostgreSQL</span><span>Python</span><span>FastAPI</span><span>React</span><span>JavaScript</span><span>PHP</span><span>Java</span><span>C</span><span>REST APIs</span><span>Git</span></div></div>
+        <div class="skill-group"><h3>Languages <span class="mono">speak</span></h3>
+          <div class="langs" id="langs">
+            <div class="lang"><b>Arabic</b><small>Fluent</small><div class="meter"><i data-w="100"></i></div></div>
+            <div class="lang"><b>French</b><small>Fluent</small><div class="meter"><i data-w="100"></i></div></div>
+            <div class="lang"><b>English</b><small>Fluent</small><div class="meter"><i data-w="100"></i></div></div>
+            <div class="lang"><b>German</b><small>Basic</small><div class="meter"><i data-w="30"></i></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<footer class="contact" id="contact" data-screen-label="05 Contact">
+  <div class="wrap">
+    <span class="mono" style="opacity:.7">04 — Contact</span>
+    <h2 style="margin-top:20px">Let's talk about a junior <em>data or BI</em> role.</h2>
+    <div class="links">
+      <a href="mailto:jtldouaa@gmail.com" id="mail"><span class="mono">Email · click to copy</span><b>jtldouaa@gmail.com <span>↗</span></b></a>
+      <a href="https://linkedin.com/in/douaa-jatlaoui-030725327" target="_blank" rel="noopener"><span class="mono">LinkedIn</span><b>douaa-jatlaoui <span>↗</span></b></a>
+      <a href="https://github.com/D00042" target="_blank" rel="noopener"><span class="mono">GitHub</span><b>D00042 <span>↗</span></b></a>
+    </div>
+    <div class="foot"><span>Based in Monastir, Tunisia.</span><span>Project descriptions are generalized to protect employer confidentiality. All figures are invented.</span></div>
+  </div>
+</footer>
+<div class="copy-toast" id="toast">Email copied to clipboard</div>
+
+<script src="portfolio.js"></script>
+</body>
+</html>
