@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="portfolio.css">
+<link rel="stylesheet" href="theme-blue.css">
 </head>
 <body>
 
@@ -198,6 +199,13 @@
         </div>
         <ul class="tags"><li>Python</li><li>Pandas</li><li>Data quality</li></ul>
       </article>
+         <article class="card reveal" style="grid-column:1/-1">
+     <div class="k mono"><span>Personal project · open source</span><span>04</span></div>
+     <h3>KPI Claim Checker: auditing AI commentary</h3>
+     <p>While building the reporting platform I noticed the language model quoting the same KPI differently between runs. This tool recomputes each KPI from source inputs, finds the figures quoted in the text and flags every mismatch. It exits with an error code on a mismatch, so it can gate a CI job.</p>
+     <ul class="tags"><li>Python</li><li>Data validation</li><li>LLM evaluation</li></ul>
+     <a class="btn p" href="https://github.com/D00042/kpi-claim-checker" target="_blank" rel="noopener" style="align-self:flex-start">View on GitHub <span class="arr">→</span></a>
+   </article>
     </div>
   </div>
 </section>
