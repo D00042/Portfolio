@@ -89,21 +89,21 @@ $('#dashes').innerHTML=DASH.map(function(d){
 }).join('');
 
 /* ---------- 03 GIMSI explorer ---------- */
-var GIMSI=[
-  {o:'Stay profitable',k:[
-    ['Gross margin','Gross margin = (<i>Revenue</i> − <i>Cost of sales</i>) ÷ <i>Revenue</i>','How much of each euro of revenue is left after direct costs.','revenue_expenses'],
-    ['ROA','ROA = <i>Net income</i> ÷ <i>Total assets</i>','How efficiently assets generate profit.','revenue_expenses · assets_liabilities'],
-    ['ROE','ROE = <i>Net income</i> ÷ <i>Shareholders\u2019 equity</i>','Return generated on the owners\u2019 capital.','revenue_expenses · assets_liabilities']]},
-  {o:'Keep enough cash',k:[
-    ['Current ratio','Current ratio = <i>Current assets</i> ÷ <i>Current liabilities</i>','Ability to cover short-term obligations.','assets_liabilities'],
-    ['Cash ratio','Cash ratio = <i>Cash & equivalents</i> ÷ <i>Current liabilities</i>','The strictest liquidity test: cash only.','assets_liabilities · cash_flow'],
-    ['Free cash flow','FCF = <i>Operating cash flow</i> − <i>Capex</i>','Cash left after keeping the business running.','cash_flow']]},
-  {o:'Fund operations',k:[
-    ['Working capital','WC = <i>Current assets</i> − <i>Current liabilities</i>','The cushion financing day-to-day activity.','assets_liabilities']]},
-  {o:'Collect & pay on time',k:[
-    ['DSO','DSO = <i>Trade receivables</i> ÷ <i>Revenue</i> × <i>365</i>','Average days to collect from clients.','clients · revenue_expenses'],
-    ['DPO','DPO = <i>Trade payables</i> ÷ <i>Purchases</i> × <i>365</i>','Average days taken to pay suppliers.','assets_liabilities · revenue_expenses']]}
-];
+   var GIMSI=[
+     {o:'Stay profitable',k:[
+       ['Gross margin','Gross margin = (<i>Revenue</i> − <i>Staff costs</i>) ÷ <i>Revenue</i>','Share of revenue left after staff costs, the main direct cost for this entity. Defined with the finance team.','revenue_expenses'],
+       ['ROA','ROA = <i>Retained profit</i> ÷ <i>Total assets</i>','How efficiently assets generate profit.','revenue_expenses · assets_liabilities'],
+       ['ROE (proxy)','ROE = <i>Retained profit</i> ÷ <i>Non-current assets</i>','Company-specific proxy used in the project. The textbook version divides by equity. Stated openly so the definition can be challenged.','revenue_expenses · assets_liabilities']]},
+     {o:'Keep enough cash',k:[
+       ['Current ratio','Current ratio = <i>Current assets</i> ÷ <i>Current liabilities</i>','Ability to cover short-term obligations.','assets_liabilities'],
+       ['Cash ratio','Cash ratio = <i>Cash & equivalents</i> ÷ <i>Current liabilities</i>','The strictest liquidity test: cash only.','assets_liabilities · cash_flow'],
+       ['Free cash flow','FCF = <i>Operating cash flow</i> + <i>Investing cash flow</i>','Cash left after operating and investing activity.','cash_flow']]},
+     {o:'Fund operations',k:[
+       ['Working capital','WC = <i>Current assets</i> − <i>Current liabilities</i>','The cushion financing day-to-day activity.','assets_liabilities']]},
+     {o:'Collect & pay on time',k:[
+       ['DSO','DSO = <i>Receivables</i> ÷ <i>Revenue</i> × <i>days</i>','Average days to collect from clients.','clients · revenue_expenses'],
+       ['DPO','DPO = <i>Payables</i> ÷ <i>Revenue</i> × <i>days</i>','Average days to pay suppliers. Revenue is the base, as in the project. Purchases would be the textbook base.','clients · revenue_expenses']]}
+   ];
 var objBox=$('#objs'), kBox=$('#kpiList'), fBox=$('#formula');
 GIMSI.forEach(function(g,gi){
   var b=document.createElement('button'); b.textContent=g.o; b.onclick=function(){pickObj(gi)}; objBox.appendChild(b);
