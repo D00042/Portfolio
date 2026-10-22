@@ -1,0 +1,79 @@
+/* theme-blue.css: load AFTER portfolio.css. Deep blue + cream, shared with KPI Claim Checker. */
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Public+Sans:wght@400;500;600&display=swap");
+
+:root{
+  --paper:#F5EFDF;--card:#FBF8EF;--ink:#0B2C5F;--ink2:#12376F;--muted:#5A6A86;--line:#D8CFB8;
+  --green:#1F4A8C;--green-l:#DCE5F2;--blue:#4F7CC0;--signal:#A8261C;--signal-l:#F3D9D5;
+  --serif:"Newsreader",Georgia,serif;--sans:"Public Sans",system-ui,sans-serif;
+}
+h1,h2,h3{font-weight:500;letter-spacing:-.015em}
+
+/* nav, hero, pulse */
+.nav.solid{background:rgba(245,239,223,.88)}
+.hero .eyebrow i{box-shadow:0 0 0 0 rgba(31,74,140,.5)}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(31,74,140,0)}100%{box-shadow:0 0 0 0 rgba(31,74,140,0)}}
+#sg stop{stop-color:#1F4A8C}
+.tabs button:hover{background:rgba(220,229,242,.6)}
+
+/* chips and labels that had hard-coded greens */
+.before .step .t{color:#8A1F16}
+.after .step .t,.cats span{color:#14305E}
+
+/* dashboard thumbnails (SVG attributes are overridden by CSS) */
+.dash svg path{stroke:#1F4A8C}
+.dash svg rect{fill:#4F7CC0}
+
+/* budget vs actual: colours set from JS */
+.bva .var[style*="2E6A4E" i],.bva .var[style*="46, 106, 78"]{background:#1F4A8C!important}
+.bva .var[style*="D2582A" i],.bva .var[style*="210, 88, 42"]{background:#A8261C!important}
+.bva .vtxt[style*="2E6A4E" i],.bva .vtxt[style*="46, 106, 78"]{color:#1F4A8C!important}
+.bva .vtxt[style*="D2582A" i],.bva .vtxt[style*="210, 88, 42"]{color:#A8261C!important}
+.legend i[style*="33557F" i]{background:#4F7CC0!important}
+.legend i[style*="2E6A4E" i]{background:#1F4A8C!important}
+.legend i[style*="D2582A" i]{background:#A8261C!important}
+.legend i[style*="dashed"]{border-top-color:#0B2C5F!important}
+
+/* formula box and AI panel */
+.formula .eq{color:#F5EFDF}
+.formula .eq i{color:#A9C4EA}
+.ai{color:#F5EFDF}
+.ai .bar{border-bottom-color:#2A4F86}
+.ai .bar .mono,.ai .foot{color:#A9B8D3}
+.ai .flag.ok,.commentary .flag.ok{background:#4F7CC0}
+.ai .caret{background:#A9C4EA}
+.ai button{background:#F5EFDF}
+.ai button:hover{background:#A9C4EA}
+.ai .out p.mono{color:#A9C4EA!important}
+
+/* live demo (dark blue section) */
+#demo{color:#F5EFDF}
+#demo .sec-head p,#demo .sec-head .num{color:#A9B8D3}
+#demo .sec-head h2 em{color:#A9C4EA}
+.panel-d{border-color:#2A4F86}
+.kpi-row{background:#2A4F86;border-color:#2A4F86}
+.kpi-row span,.ctrl p,.commentary .mono{color:#A9B8D3}
+.up,.sl label b{color:#A9C4EA}
+.down{color:#F28B7D}
+.kpi-row small[style*="110, 114, 122"]{color:#7F93B6!important}
+.sl small{color:#7F93B6}
+.chart-d .tip{background:#F5EFDF}
+.commentary{border-top-color:#2A4F86}
+input[type=range]{background:#2A4F86}
+input[type=range]::-webkit-slider-thumb{background:#F5EFDF;border-color:#5B8BD0}
+input[type=range]::-moz-range-thumb{background:#F5EFDF;border-color:#5B8BD0}
+.reset{border-color:#4A6CA3;color:#F5EFDF}
+.reset:hover{border-color:#A9C4EA;color:#A9C4EA}
+
+/* demo chart (SVG attributes are overridden by CSS) */
+.chart-d line{stroke:#2A4F86}
+.chart-d text{fill:#A9B8D3}
+.chart-d rect.bi,.chart-d g rect:nth-of-type(1){fill:#A9C4EA}
+.chart-d rect.bo,.chart-d g rect:nth-of-type(2){fill:#5B8BD0}
+#netLine,.chart-d g line{stroke:#F28B7D}
+#netDots circle{fill:#0B2C5F;stroke:#F28B7D}
+
+/* contact */
+.contact,.links a{background:var(--ink)}
+.links{background:rgba(245,239,223,.25);border-color:rgba(245,239,223,.25)}
+.links a:hover{background:#12376F}
+.contact h2 em{color:#A9C4EA}
